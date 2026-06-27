@@ -44,6 +44,15 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
+
+        <receiver
+            android:name=".TaskerReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="net.typeblog.socks.CONNECT"/>
+                <action android:name="net.typeblog.socks.DISCONNECT"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
